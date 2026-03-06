@@ -38,7 +38,9 @@ const insightText = {
     globe: `<strong>Live Tracker</strong> — Real-time orbital positions of tracked debris. Drag to rotate (3D) or pan (2D). Hover objects for details. Use controls to filter by regime, search objects, or adjust time speed.`,
     altitude: `<strong>Altitude Distribution</strong> — Density of tracked objects by orbital altitude. Toggle between LEO focus (0–2,000 km) and full range. Reference lines mark ISS (~408 km) and Sun-Synchronous Orbit (~800 km).`,
     heatmap: `<strong>Orbital Regime Map</strong> — 2D density map showing congestion at the intersection of altitude and inclination. Bright cells indicate "bad neighborhoods" where satellite operators should avoid deploying. This view directly answers: which orbital regimes are most congested?`,
-    timeline: `<strong>Debris Timeline</strong> — Objects in the current catalog grouped by launch year. Toggle cumulative view to see total growth. Annotated lines mark major fragmentation events: Chinese ASAT (2007), Iridium-Cosmos collision (2009), Russian ASAT (2021).`
+    timeline: `<strong>Debris Timeline</strong> — Objects grouped by parent object's launch year (not debris creation date). 
+The 1999 spike reflects Fengyun-1C debris from the 2007 Chinese ASAT test — debris inherits 
+the parent's launch year. Annotations mark the original launch year of major fragmentation event targets.`
 };
 
 // ============================================================
