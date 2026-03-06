@@ -195,6 +195,14 @@ function renderTimeline() {
             .attr('stroke-dasharray', '5,3')
             .attr('opacity', 0.8);
 
+        svg.append('text')
+            .attr('x', width / 2)
+            .attr('y', height + margin.bottom * 0.95)
+            .attr('text-anchor', 'middle')
+            .attr('fill', '#e8a020')
+            .attr('font-size', '0.72rem')
+            .text('⚠ Objects with missing launch dates (~10%) are excluded — early-epoch counts are underestimates');
+
         // Multi-line label
         lines.forEach((line, i) => {
             svg.append('text')

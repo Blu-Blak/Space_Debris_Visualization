@@ -26,10 +26,11 @@ function getRegime(altKm) {
     return 'geo';
 }
 
+//  AFTER FEEDBACK - CVD-safe categorical palette (IBM Color Blind Safe)
 function getRegimeColor(regime) {
-    if (regime === 'leo') return '#00ff88';
-    if (regime === 'meo') return '#f5a623';
-    return '#ff4d4d';
+    if (regime === 'leo') return '#648FFF';  // blue
+    if (regime === 'meo') return '#FFB000';  // gold
+    return '#DC267F';                        // magenta
 }
 
 // --- Insight text per view ---

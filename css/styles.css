@@ -250,9 +250,9 @@ input[type="text"]:focus {
     border-radius: 50%;
 }
 
-.dot.leo { background: #00ff88; box-shadow: 0 0 4px #00ff88; }
-.dot.meo { background: #f5a623; box-shadow: 0 0 4px #f5a623; }
-.dot.geo { background: #ff4d4d; box-shadow: 0 0 4px #ff4d4d; }
+.dot.leo { background: #648FFF; box-shadow: 0 0 4px #648FFF; }
+.dot.meo { background: #FFB000; box-shadow: 0 0 4px #FFB000; }
+.dot.geo { background: #DC267F; box-shadow: 0 0 4px #DC267F; }
 
 /* ===== LEGEND PANEL ===== */
 .legend-panel {
@@ -400,8 +400,7 @@ input[type="text"]:focus {
 
 /* Timeline bars */
 .bar-year {
-    fill: #d04a35;
-    transition: fill 0.15s;
+    fill: #6B8FA8;  /* AFTER FEEDBACK - neutral steel blue — count, not danger */
 }
 
 .bar-year:hover {

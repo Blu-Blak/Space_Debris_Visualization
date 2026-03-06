@@ -77,8 +77,9 @@ function init2DMap() {
     const height = container.clientHeight;
 
     mapProjection = d3.geoEquirectangular()
-        .scale(width / (2 * Math.PI))
-        .translate([width / 2, height / 2]);
+    .scale(width / (2 * Math.PI))
+    .translate([width / 2, height / 2])
+    .clipExtent([[0, 0], [width, height]]); // clips to canvas bounds
 
     mapPath = d3.geoPath().projection(mapProjection);
 

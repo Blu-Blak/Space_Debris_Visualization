@@ -124,13 +124,13 @@ function renderAltitude() {
 
     // Scale note if using log
     if (useLog) {
-        svg.append('text')
-            .attr('x', width - 10)
-            .attr('y', 15)
-            .attr('text-anchor', 'end')
-            .attr('fill', '#556')
-            .attr('font-size', '0.72rem')
-            .text('⚠ Y-axis uses symmetric log scale for readability');
+    svg.append('text')
+        .attr('x', width / 2)
+        .attr('y', height + margin.bottom * 0.95)
+        .attr('text-anchor', 'middle')
+        .attr('fill', '#e8a020')
+        .attr('font-size', '0.72rem')
+        .text('⚠ Y-axis uses symmetric log scale — bar heights do not represent linear count differences');
     }
 }
 
